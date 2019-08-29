@@ -6,6 +6,7 @@ public class Engine {
     private int horsePower = 150;
     private int fuelRate = 14;
 
+
     public int getFuelRate() {
         return this.fuelRate;
     }
