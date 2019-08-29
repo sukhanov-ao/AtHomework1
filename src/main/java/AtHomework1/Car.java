@@ -1,28 +1,22 @@
 package AtHomework1;
 
 public class Car {
-    String name;
-    String model;
-    String color;
-    int run;
-    int weight;
-    private boolean rta;
-    private int gasTankVol;
-    String engine;
+    String name = "DeLorean";
+    String model = "DMC-12";
+    String color = "metallic";
+    int run = 123456;
+    private int weight = 1230;
+    private boolean rta = true;
+    private int gasTankVol = 78;
+    private Engine engine = "v6";
 
-    public Car(String name, String model, String color, int run, int weight, boolean rta, int gasTankVol, String engine) {
-        this.name = name;
-        this.model = model;
-        this.color = color;
-        this.run = run;
-        this.weight = weight;
-        this.rta = rta;
-        this.gasTankVol = gasTankVol;
-        this.engine = engine;
+    Engine myEngine = new Engine();
+
+
+    public void horn() {
+        System.out.println("Подача звукового сигнала, берегите уши : Beep - Beep!!!");
     }
-
-    public String horn() {
-        //System.out.print("Beep-Beep");
-        return "Beep-Beep!";
+    public void consuption() {
+        System.out.println("Топлива потрачено за все время " + run / myEngine.getFuelRate() + " л.");
     }
 }
